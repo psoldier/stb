@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  host: localhost
+  username: root
+  password: root
+  database: adminbootstrap_development
+
+test:
+  adapter: mysql
+  host: localhost
+  username: root
+  password: root
+  database: adminbootstrap_test
+
+production:
+  adapter: mysql
+  host: 10.181.24.13
+  username: seghiniapp_user
+  password: 6wNzYFsUf5eWf4lXo9AG
+  database: adminbootstrap_production
