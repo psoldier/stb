@@ -1,9 +1,8 @@
-- if current_user.username == "admin@backing-online.com"
-  .form-group
-    %label.col-sm-2.control-label{ for:'admin' } Admin
-    .col-sm-10
-      %input{type:'hidden', name:'user[admin]', value:'false' }
-      %input{type:'checkbox', name:'user[admin]', value:'true', checked: @user.admin }
+.form-group
+  %label.col-sm-2.control-label{ for:'admin' } Admin
+  .col-sm-10
+    %input{type:'hidden', name:'user[admin]', value:'false' }
+    %input{type:'checkbox', name:'user[admin]', value:'true', checked: @user.admin }
 .form-group
   %label.col-sm-2.control-label{ for:'name' } Nombre*
   .col-sm-10
