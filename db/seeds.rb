@@ -1,1 +1,0 @@
-User.create username: "admin@backing-online.com", password: "soaring10", name: "Backing Admin", admin: true
