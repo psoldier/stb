@@ -4,11 +4,7 @@ module AdminBootstrap
   class AdminApp
 
     get '/users' do
-      if current_user.username == "admin@backing-online.com"
-        @users = User.order(:username).paginate(page,PER_PAGE)
-      else
-        @users = User.exclude(:username => 'admin@backing-online.com').order(:username).paginate(page,PER_PAGE)
-      end
+      @users = User.order(:username).paginate(page,PER_PAGE)
       haml :'users/index'
     end
 
